@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HamBurgerMenu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <nav>
+            <div id="logoArea">
+                <h3>Avii</h3>
+            </div>
+            <!-- <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Project</li>
+            </ul> -->
+            <div class="hamburger-container">
+                <img src="Assets/menu.png" id="menuBtn">
+               <img src="Assets/close.png"id="cut"> 
+
+            </div>
+        </nav>
+
+        <!-- for mobile device -->
+        <div id="hamburgerListContainer">
+            <a href = "" target="_blank">Home</a>
+            <a>About</a>
+            <a>Project</a>
+        </div>
+
+    </div>
+
+    <script>
+        const menuBtn = document.getElementById("menuBtn");
+        const cut = document.getElementById("cut");
+        const hamburgerListContainer = document.getElementById("hamburgerListContainer");
+
+        menuBtn.addEventListener("click",()=>{
+           if(hamburgerListContainer !== "none" ){
+
+               hamburgerListContainer.style.display = "flex";
+               menuBtn.style.display = "none"; 
+           }
+           else{
+            
+           }
+           
+           cut.style.display = "block";
+           
+        })
+        cut.addEventListener("click",()=>{
+            hamburgerListContainer.style.display = "none";
+            menuBtn.style.display = "block";
+            cut.style.display = "none";
+         })
+    </script>
+</body>
+
+</html>
