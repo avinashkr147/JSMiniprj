@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+#main{
+    height: 100vh;
+    width: 100%;
+    padding: 10px 10%;
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(Assets/background.png);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+#main h4{
+    margin-top: 160px;
+    margin-bottom: 25px;
+    font-weight: 400;
+    color: lightsalmon;
+    animation: blink 2s infinite;
+    
+}
+@keyframes blink {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+#main h2{
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-weight: bolder;
+    font-size: 30px;
+    line-height: 35px;
+
+}
+h2>span:nth-child(1){
+    color: rgb(19, 187, 16);
+}
+h2>span:nth-child(3){
+    color: rgb(175, 161, 0);
+}
+#main p{
+     margin-top: 10px;
+    margin-bottom: 5px;
+    color:thistle   ;
+    font-weight: lighter;
+}
+form{
+    margin-top: 15px;
+    display: flex;
+    height: 50px;
+
+}
+form input{
+    width: 30%;
+    padding: 20px 10px;
+    border: none;
+    outline: none;
+}
+form button{
+    background: rgb(91, 255, 91);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+form button img{
+    height: 20px;
+    
+}
+#responsePara{
+    color: red !important;
+    font-weight: 400;
+}
+footer{
+    background:coral ;  
+    padding: 5px 10px;
+    margin-left:0px;
+    height: 5vh;
+
+}
+footer h4{
+    margin-left: 450px;
+    font-weight: 510;
+}
+/* for mobile device */
+
+@media (max-width: 480px) {
+      form input{
+    width: 80%;
+    
+}
+#main{
+    padding: 10px;
+    height: 95vh;
+}
+#main h4{
+    margin-top: 90px;
+}
+footer{
+    background:coral ;  
+    padding: 5px 10px;
+    margin-left:0px;
+    height: 5vh;
+
+}
+footer h4{
+    margin-left: 50px;
+    margin-top: 10px;
+    font-weight: 510;
+}
+    }
