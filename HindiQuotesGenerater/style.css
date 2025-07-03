@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    /* width: 100%; */
+  
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+.container{
+  height: 100%;
+   max-width: 400px;
+   color: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+}
+.card{
+   /* background:gray; */
+   /* border-radius: 15px; */
+   margin-top: 10px;
+   padding:  7px 20px;
+   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+ 
+}
+.card h2{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+   
+   
+}
+.quote-box{
+    background: rgb(116, 116, 116)  ;
+    padding: 30px 24px;
+    height: 170px;
+    width: 340px;
+    border-radius: 10px;
+    color: aliceblue;
+}
+.quote-show{
+    color: yellowgreen;
+    font-weight: 700;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.para-container{
+    width: 100%;
+    background: yellow;
+}
+.para{
+    color: rgb(255, 95, 46);
+    font-weight: 500;
+    display: flex;
+    float: right;
+}
+
+.card span:nth-child(even) {
+ color: rgb(167, 167, 127);
+}
+select{
+    background: rgb(109, 109, 109);
+}
+option{
+    background: #fff;
+}
+.select-container{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.next-btn-container{
+    width: 100%;
+  
+    margin-top: 40px;
+}
+.next-btn-container button{
+    width: 92%;
+    padding: 7px 10px;
+    text-align: center;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    background: rgb(2, 103, 24);
+    color: #fff;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.alertContainer{
+    margin-bottom: 20px;
+    
+}
+.alert-text{
+    margin-left: 15px;
+    
+
+}
+ /* media queries */
+@media (max-width:320px) {
+    .container{
+        padding: 10px;
+        /* margin: 10px 20px; */
+    }
+    .card{
+        padding:10px;
+    }
+    .quote-box{
+    background: rgb(116, 116, 116);
+    height: 150px;
+    padding: 10px 20px;
+    width: 290px;
+    border-radius: 10px;
+    color: aliceblue;
+}
+.quote-show{
+    color: yellowgreen;
+    font-weight: 400;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#card-top-text{
+   margin-left: 28px !important;
+   padding: 4px 5px;
+   
+   
+}
+
+
+}
+
+ @media (max-width:425px) {
+    body{
+        background:gray;
+    }
+    .card{
+       box-shadow: none;
+        margin-top: 0;
+    }
+    
+    }
+    .card  h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 100%;
+   
+   
+}
+.quote-box{
+    background: #f2f2f2;
+}
+
+ 

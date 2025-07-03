@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>qqq</title>
+  </head>
+
+  <body>
+    <div class="container">
+        <div class="card">
+          <p id="card-top-text" style="margin-left: 60px; color: rgb(74, 67, 57);">" All kinds of quote and shayari "</p>
+        <h2>
+          <span>Q</span>
+          <span>u</span>
+          <span>o</span>
+          <span>t</span>
+          <span>e</span>
+          <span>s</span>
+          
+        </h2>
+        <div class="quote-box">
+          <p class="quote-show"></p>
+          <div class="para-container">
+            <p class="para"></p>
+          </div>
+        </div>
+        <div class="select-container">
+          <select id="quote-type">
+            <option  value="" selected >Quote Type</option>
+            <option value="https://hindi-quotes.vercel.app/random/love">
+              Love
+            </option>
+            <option value="https://hindi-quotes.vercel.app/random/motivational">
+              Motivational
+            </option>
+            <option value="https://hindi-quotes.vercel.app/random/attitude">
+              Attitude
+            </option>
+            <option value="https://hindi-quotes.vercel.app/random/success">
+              Success
+            </option>
+            <option value="https://hindi-quotes.vercel.app/random/sad">
+              Sad
+            </option>
+            <option value="https://hindi-quotes.vercel.app/random/positive">
+              Positive
+            </option>
+          </select>
+          <select style="overflow: hidden" id="language">
+            <option value="" selected>Hindi</option>
+          </select>
+        </div>
+        <div class="next-btn-container">
+            <div class="alertContainer" >
+              <p style="color: red;" class="alert-text" ></p>
+            </div>
+          <button id="next">Next</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
